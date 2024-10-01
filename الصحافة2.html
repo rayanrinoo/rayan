@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهمية وأنواع الصحافة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        h2 {
+            color: #444;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: #444;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>أهمية الصحافة وأنواعها</h1>
+        
+        <button onclick="showContent('importance')">أهمية الصحافة</button>
+        <button onclick="showContent('types')">أنواع الصحافة</button>
+
+        <div id="importance" class="content">
+            <h2>أهمية الصحافة</h2>
+            <p>
+                الصحافة هي من أهم وسائل الإعلام التي تساهم في نشر المعلومات والأخبار وتوعية الجمهور. تلعب الصحافة دورًا حيويًا في:
+            </p>
+            <ul>
+                <li>نشر الأخبار والمعلومات الموثوقة.</li>
+                <li>مراقبة السلطة وكشف الفساد.</li>
+                <li>توجيه الرأي العام.</li>
+                <li>تعزيز حرية التعبير والديمقراطية.</li>
+            </ul>
+        </div>
+
+        <div id="types" class="content">
+            <h2>أنواع الصحافة</h2>
+            <p>تتعدد أنواع الصحافة لتشمل مجالات مختلفة، ومن أبرز أنواعها:</p>
+            <ul>
+                <li><strong>الصحافة الإخبارية:</strong> تركز على تقديم الأخبار العاجلة والمحلية والدولية.</li>
+                <li><strong>الصحافة الاستقصائية:</strong> تعمل على التحقيق في القضايا المهمة لكشف الحقائق المخفية.</li>
+                <li><strong>الصحافة الرياضية:</strong> تغطي الأحداث والبطولات الرياضية وتقدم التحليلات الخاصة بها.</li>
+                <li><strong>الصحافة الاقتصادية:</strong> تقدم معلومات حول الأسواق، الاقتصاد العالمي، والأعمال التجارية.</li>
+                <li><strong>الصحافة الثقافية:</strong> تركز على تغطية الأحداث الثقافية مثل الأدب، الفن، والسينما.</li>
+                <li><strong>الصحافة الرقمية:</strong> هي نوع من الصحافة التي تعتمد على الوسائل التكنولوجية والإنترنت لنشر الأخبار والمحتوى.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            // إخفاء كل المحتويات
+            document.querySelectorAll('.content').forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // إظهار المحتوى المطلوب
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
